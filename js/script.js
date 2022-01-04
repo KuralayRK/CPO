@@ -55,3 +55,11 @@ window.onclick = function(event) {
     modal.style.display = "none";
     }
 }
+
+let x = document.querySelector(".modal")
+setTimeout(function(){
+  x.style.animation = "fade 2s";
+  x.style.opacity = "4"
+  })
+
+
