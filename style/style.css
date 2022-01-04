@@ -1,6 +1,7 @@
 body{
   margin: 0px;
 }
+
 .menu{
   display: flex;
   justify-content: space-around;
@@ -10,6 +11,25 @@ body{
   width: 100%;
   margin-top: 30px;
   color: #FFFFFF;
+}
+
+.social-medias{
+  display: inline-flex;
+  align-items: center;
+  margin-right: 20px;
+  justify-content: space-between;
+}
+
+.adress{
+  display: inline-flex;
+  flex-direction: row;
+}
+.adress-two{
+  margin-left: 10px;
+}
+
+.phone{
+  font-size: 20px;
 }
 
 .slider{
@@ -68,9 +88,10 @@ body{
 .main-text{
   position: absolute;
   z-index: 1;
-  padding-top: 10%;
+  padding-top: 11%;
   margin-left: 90px;
   width: 80%;
+  font-family: Open Sans;
 }
 
 .text-slide-one{
@@ -84,13 +105,13 @@ body{
 
 .text-two-slide-one{
   color: #ffff;
-  font-size: 23px;
+  font-size: 20px;
   margin-top: 30px;
 }
 
 .text-tree-slide-one{
   color: #ffff;
-  font-size: 23px;
+  font-size: 20px;
 }
 
 .btn-offer{
@@ -218,6 +239,7 @@ body{
 }
 
 .courses{
+  font-family: Open Sans;
   padding-top: 300px;
   padding-left: 280px;
   color: #FFFFFF;
@@ -225,7 +247,7 @@ body{
   flex-direction: row; 
   flex-wrap:nowrap;
   align-items: center;
-  
+  font-size: 14px;
 }
 
 .course-one{
@@ -345,10 +367,11 @@ body{
   position: fixed;
   top: 20px;
   right: 40px;
-  width: 26px;
-  height: 26px;
+  width: 60px;
+  height: 64px;
   cursor: pointer;
   z-index: 1;
+  background-color: red;
 }
 
 .menu__btn > span,
@@ -358,7 +381,7 @@ body{
   position: absolute;
   width: 100%;
   height: 2px;
-  background-color:red;
+  background-color:black;
 }
 .menu__btn > span::before {
   content: '';
