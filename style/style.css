@@ -5,41 +5,39 @@ body{
   display: flex;
   justify-content: space-around;
   font-family: Open Sans;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  margin-top: 30px;
+  color: #FFFFFF;
 }
+
 .slider{
   width: 100%;
-  /* Положение элемента устанавливается относительно его исходной позиции: */
-  position: relative;
-  /* Центрируем по горизонтали: */
+  height: 70%;
+  position: absolute;
   margin: auto;
   height: auto;
 }
 
-/* Картинка масштабируется по отношению к родительскому элементу: */
+
 .slider .item img {
-  /* Элемент меняет размер так, чтобы заполнить блок и сохранить пропорции: */
   object-fit: cover;
   width: 100%;
 
 }
 
-/* Кнопки назад и вперёд: */
 .slider .previous, .slider .next {
-  /* Добавляет курсору иконку, когда тот оказывается над кнопкой: */
   cursor: pointer;
-  /* Положение элемента задаётся относительно границ браузера: */
   position: absolute;
   top: 50%;
   width: auto;
   margin-top: -22px;
   padding: 16px;
-  /* Оформление самих кнопок: */
   color: white;
   font-weight: bold;
   font-size: 20px;
-  /* Плавное появление фона при наведении курсора: */
   transition: 0.6s ease;
-  /* Скругление границ: */
   border-radius: 0 3px 3px 0;
 }
 .slider .next {
@@ -47,19 +45,16 @@ body{
   border-radius: 3px 0 0 3px;
 }
 
-/* При наведении курсора на кнопки добавляем фон кнопок: */
 .slider .previous:hover,
 .slider .next:hover {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-/* Анимация слайдов: */
 .slider .item {
   animation-name: fade;
   animation-duration: 1.5s;
 }
 @keyframes fade {
-  /* Устанавливаем и изменяем степень прозрачности: */
   from {
       opacity: 0.4
   }
@@ -67,3 +62,117 @@ body{
       opacity: 1
   }
 }
+
+.main-text{
+  position: absolute;
+  z-index: 1;
+  padding-top: 10%;
+  margin-left: 90px;
+  width: 80%;
+}
+
+.text-slide-one{
+  color: #EB0E0E;
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 82px;
+  font-family: Open Sans;
+  font-style: normal;
+}
+
+.text-two-slide-one{
+  color: #ffff;
+  font-size: 23px;
+  margin-top: 30px;
+}
+
+.text-tree-slide-one{
+  color: #ffff;
+  font-size: 23px;
+}
+
+.btn-offer{
+  margin-top: 50px;
+  width: 280px;
+  height: 67px;
+  background: #EB0E0E;
+  font-family: Muller;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 25px;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.item .bottom-img{
+  position: absolute;
+  z-index: 1;
+}
+.modal {
+  display: none;
+  z-index: 1;
+  width: 95%;
+  height: 50%;
+  background-color: #FFFFFF; 
+  position:absolute;
+  z-index:31;
+  width:500px;
+  left:50%;
+  margin:-400px 50px 50px -200px;
+}
+  
+.modal-content {
+  display: inline-flex;
+  flex-direction: column; 
+  flex-wrap: wrap;
+  align-items: center;
+  width: 500px;
+  height: 320px;
+  background-color: #fefefe;
+  border: 1px solid #888;
+}
+.modal-content .input{
+  margin-bottom: 7px;
+  margin-top: 20px;
+  width: 300px;
+  height: 35px;
+  border-radius: 5px;
+}
+
+.p{
+  font-size: 25px;
+}
+
+.btnb{
+  background: #EB0E0E;
+  color: #FFFFFF;
+  font-size: 20px;
+  border-radius: 10px;
+}
+  .close {
+  color: #aaa;
+  font-size: 40px;
+  font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  }
+
+  .bottom-img{
+    display: inline-flex;
+    flex-direction: row; 
+    flex-wrap:nowrap;
+    padding-left: 300px;
+    padding-top: 180px;
+    margin-right: 10px;
+  }
+
+  .bottom-img img{
+    margin-right: 40px;
+  }
