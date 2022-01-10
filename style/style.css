@@ -273,7 +273,7 @@ body{
 }
 
 .course-three{
-  margin-right: 10px;
+  margin-right: 120px;
   width: 280px;
   height: 589px;
   text-align: center;
@@ -379,7 +379,8 @@ body{
 .menu__btn > span::after {
   display: block;
   position: absolute;
-  width: 100%;
+  margin-left: 5px;
+  width: 80%;
   height: 2px;
   background-color:black;
 }
@@ -434,3 +435,56 @@ body{
   visibility: visible;
   right: 0;
 }
+
+@media screen and (max-width:380px) {
+ 
+  .cpo{
+    display: none;
+  }
+  .social-medias{
+    display: none;
+  }
+  .adress{
+    display: none;
+  }
+  .phone{
+    display: none;
+  }
+  .main-text{
+    margin-left: 35px;
+  }
+  .modal-content {
+  width: 375px;
+  }
+  .modal-content .input{
+    width: 250px;
+  }
+  .center{
+    padding-left: 20px
+  }
+  .info{
+    display: inline-flex;
+    flex-direction: column; 
+    flex-wrap:nowrap;
+    padding-left: 10px;
+  }
+  .text-info{
+    width: 365px;
+    height: 800px;
+    font-size: 19px;
+  }
+  .info-img{
+    width: 360px;
+  }
+  .courses{
+    padding-left: 45px;
+    display: inline-flex;
+    flex-direction: column; 
+    flex-wrap:nowrap;
+  }
+  .contacts{
+    padding-left: 20px;
+    width: 360px;
+  } 
+}
+  
